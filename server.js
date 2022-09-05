@@ -66,7 +66,7 @@ app.delete('/api/employees/:id', (req, res) => {
       res.statusMessage(400).json({ error: res.message });
     } else if (!result.affectedRows) {
       res.json({
-      message: 'Movie not found'
+      message: 'Employee not found'
       });
     } else {
       res.json({
